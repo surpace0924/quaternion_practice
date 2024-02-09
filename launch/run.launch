@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find quaternion_practice)/rviz.rviz" respawn="false" output="screen"/>
+
+  <node name="quaternion_practice" pkg="quaternion_practice" type="main.py" output="screen">
+  </node>
+
+</launch>
