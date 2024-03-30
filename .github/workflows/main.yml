@@ -30,3 +30,8 @@ jobs:
         cd ${CATKIN_WS}
         catkin build
         
+    - name: run
+      run: |
+        source /opt/ros/noetic/setup.bash
+        roslaunch quaternion_practice run.launch
+        
