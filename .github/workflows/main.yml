@@ -29,9 +29,12 @@ jobs:
         source /opt/ros/noetic/setup.bash
         cd ${CATKIN_WS}
         catkin build
+        source devel/setup.bash
         
     - name: run
       run: |
+        cd ${CATKIN_WS}
         source /opt/ros/noetic/setup.bash
+        source devel/setup.bash
         roslaunch quaternion_practice run.launch
         
